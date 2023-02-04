@@ -41,7 +41,7 @@
 }
 
 .button:hover {
-    background-color: #8065b0
+    background-color: #594e69
 }
 
 #equals {
@@ -58,25 +58,36 @@
     color: #975DFA;
 }
 
-#calculo {
-    border: 1px solid red;
-    display: flex;
-    align-items: center;
-    text-align: right;
-    letter-spacing: -0.02em;
-}
 
 #result {
-    border: 1px solid red;
+
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    align-items: flex-end ;
     
-    padding: 0px 22px 0px 18px;
+    padding: 5px 22px 0px 18px;
+    font-size: 35PX;
     gap: 8px;
     width: 288px;
     height: 86px;
     margin-top: 54px;
     margin-bottom: 26px;
     text-align: right;
+    color: white;
+}
+
+#ce:hover {
+    background-color: #594e69
+}
+
+#purple-background:hover {
+    background-color: #7e51c7
+}
+
+#equals:hover {
+    background-color: #9861f1
+}
+
+#Equals {
+   display: flex;
 }

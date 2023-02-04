@@ -14,39 +14,40 @@
 <body>
     <div class="background">
     <div class="calculator">
-        <div id="result">
-            <p id="calculo">123</p>
+        <div id="Equals">
+            <img src="./assets/Equals.svg" alt="">
+            <p id="result"></p>
         </div>
         <table>
             <tr>
-                <td><button id="ce" class="button">CE</button></td>
-                <td><button class="button">C</button></td>
-                <td><button class="button"><img src="./assets/percent.svg" alt=""></button></td>
-                <td><button id="purple-background" class="button"><img src="./assets/division.svg"  alt=""></button></td>
+                <td><button id="ce" class="button" onclick="clean()">CE</button></td>
+                <td><button class="button" onclick="clean()">C</button></td>
+                <td><button class="button" onclick="insert('#')" disabled><img src="./assets/percent.svg" alt=""></button></td>
+                <td><button id="purple-background" class="button" onclick="insert('/')"><img src="./assets/division.svg"  alt=""></button></td>
             </tr>
             <tr>
-                <td><button class="button">7</button></td>
-                <td><button class="button">8</button></td>
-                <td><button class="button">9</button></td>
-                <td><button id="purple-background" class="button"><img src="./assets/x.svg" alt=""></button></td>
+                <td><button class="button" onclick="insert('7')">7</button></td>
+                <td><button class="button" onclick="insert('8')">8</button></td>
+                <td><button class="button" onclick="insert('9')">9</button></td>
+                <td><button id="purple-background" class="button" onclick="insert('*')"><img src="./assets/x.svg" alt=""></button></td>
             </tr>
             <tr>
-                <td><button class="button">4</button></td>
-                <td><button class="button">5</button></td>
-                <td><button class="button">6</button></td>
-                <td><button id="purple-background" class="button"><img src="./assets/minus.svg" alt=""></button></td>
+                <td><button class="button" onclick="insert('4')">4</button></td>
+                <td><button class="button" onclick="insert('5')">5</button></td>
+                <td><button class="button" onclick="insert('6')">6</button></td>
+                <td><button id="purple-background" class="button" onclick="insert('-')"><img src="./assets/minus.svg" alt=""></button></td>
             </tr>
             <tr>
-                <td><button class="button">1</button></td>
-                <td><button class="button">2</button></td>
-                <td><button class="button">3</button></td>
-                <td><button id="purple-background" class="button"><img src="./assets/+.svg" alt=""></button></td>
+                <td><button class="button" onclick="insert('1')">1</button></td>
+                <td><button class="button" onclick="insert('2')">2</button></td>
+                <td><button class="button" onclick="insert('3')">3</button></td>
+                <td><button id="purple-background" class="button" onclick="insert('+')"><img src="./assets/+.svg" alt=""></button></td>
             </tr>
             <tr>
-                <td><button class="button"><img src="./assets/PlusMinus.svg" alt=""></button></td>
-                <td><button class="button">0</button></td>
-                <td><button class="button">,</button></td>
-                <td><button id="equals" class="button"><img src="./assets/=.svg" alt=""></button></td>
+                <td><button class="button" onclick="insert('#')" disabled><img src="./assets/PlusMinus.svg" alt=""></button></td>
+                <td><button class="button" onclick="insert('0')">0</button></td>
+                <td><button class="button" onclick="insert(',')">,</button></td>
+                <td><button id="equals" class="button" onclick="calculator()"><img src="./assets/=.svg" alt=""></button></td>
             </tr>
         </table>
     </div>
